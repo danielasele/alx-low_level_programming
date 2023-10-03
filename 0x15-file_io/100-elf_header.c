@@ -106,9 +106,9 @@ default:
 printf("<unknown: %d>\n", header->e_ident[EI_OSABI]);
 break;
 }
-printf("  ABI Version: %d\n", header->e_ident[EI_ABIVERSION]);
+printf("  ABI Version:                       %d\n", header->e_ident[EI_ABIVERSION]);
 
-printf("  Type:  ");
+printf("  Type:                              ");
 switch (header->e_type)
 {
 case ET_NONE:
@@ -131,5 +131,5 @@ printf("<unknown: %d>\n", header->e_type);
 break;
 }
 
-printf("  Entry point address: 0x%lx\n", (unsigned long)header->e_entry);
+printf("  Entry point address:               0x%lx\n", (unsigned long)header->e_entry);
 }
