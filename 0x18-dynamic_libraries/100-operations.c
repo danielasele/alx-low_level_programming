@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -35,12 +34,12 @@ int mul(int a, int b)
 }
 
 /**
- * divide - divides two integers
+ * div - divides two integers
  * @a: first integer
  * @b: second integer
  * Return: quotient of a and b, or 0 if b is 0
  */
-int divide(int a, int b)
+int div(int a, int b)
 {
 	if (b == 0)
 	{
